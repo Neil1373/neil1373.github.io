@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        種田新聞 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;padding:0 15px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-published-note{color:#337ab7}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid" style="position: relative;"><h1 id="種田新聞"><a class="anchor hidden-xs" href="#種田新聞" title="種田新聞"><span class="octicon octicon-link"></span></a>種田新聞</h1><p><strong>文／沈郁鈞、林虹妤、周柏頤</strong></p><hr><h2 id="序"><a class="anchor hidden-xs" href="#序" title="序"><span class="octicon octicon-link"></span></a>序</h2><p>今年由台大生傳系闕河嘉老師開設的「鄉村農業體驗」課程，與一般大學課堂在教室中看著投影片或是教授的板書截然不同。這門課的「教室」，來到宜蘭員山的深溝村，一個放眼望去盡是稻田與農舍的傳統村落。</p><hr><h2 id="茶＆田菁：除掉害蟲可以不必殺它"><a class="anchor hidden-xs" href="#茶＆田菁：除掉害蟲可以不必殺它" title="茶＆田菁：除掉害蟲可以不必殺它"><span class="octicon octicon-link"></span></a>茶＆田菁：除掉害蟲可以不必殺它</h2><p>由於農地面積廣大，員山鄉也聚集許多農友。他們大多抱持著「愛土地，愛自然」的心，不灑農藥，盡可能尋求自然的方式耕作。三月初訪時，我們有幸來到<a href="https://www.facebook.com/OVANH/" target="_blank" rel="noopener"><strong>月見學習農園 OVANH</strong></a>共同創立人──「茶」與「田菁」兩位農友的田地見習。不灑苦茶粕，只用徒手撿起，是她們對付外來種害蟲福壽螺的唯一方式。（編按：苦茶粕是苦茶榨油後所剩下的渣滓，由於其含有與肥皂相似的成分，藉由分解福壽螺身體表面的黏膜，進一步使福壽螺死亡。然而，同樣具有黏膜的田螺、蚯蚓、蝸牛以及其他螺貝類等動物也會因苦茶粕的皂素而死亡，因此施灑苦茶粕並非指除掉福壽螺，而是對田中其他具有黏膜的生物也會有不良影響。）據兩位農友的經驗，由於人工撿福壽螺會更耗費時間，通常她們需要兩到三周的時間才能完成所有水田的撿螺。她們主要耕作水稻，另外也有金棗、黑豆以及其他作物等。這天我們在她們的田裡幫忙撿螺，然而因為雨不停歇，影響水質，撿螺的難度也比晴天時較高。不過，她們根據己身經驗告訴我們：「福壽螺的習性也大有不同，有的較常在晴天時出現，而有的較常在雨天出現，所以不一樣的天氣也有助於我們撿螺。」<br>
+<img src="https://i.imgur.com/GqAaGgj.png" alt="" width="600"></p><blockquote>
+<p>圖一：三月初在茶與田菁的水田中撿螺</p>
+</blockquote><h2 id="永旭：致力栽種不同品種的水稻"><a class="anchor hidden-xs" href="#永旭：致力栽種不同品種的水稻" title="永旭：致力栽種不同品種的水稻"><span class="octicon octicon-link"></span></a>永旭：致力栽種不同品種的水稻</h2><p>在三月初時我們接觸的另一位農友是<a href="https://www.facebook.com/%E6%88%91%E5%80%91%E5%AE%B6-816394938386931/" target="_blank" rel="noopener"><strong>永旭</strong></a>，同時也是來自台大森林所的農友。本年度主要種植新品種稻米──台南16號。捨棄插秧機，永旭評估這個剛培育的秧種以人工插秧的方式較為適合。這一次我們幫忙將秧苗以人工方式插秧，比起前一天的陰雨綿綿，插秧當天剛好是晴天，大部分人是第一次在水田中插秧，但到後來有些人駕輕就熟，似乎也掌握到插秧的技巧，插秧的速度也有所提升。永旭也和我們分享他和一些農友的互動，比較新鮮的是農友間會互相問彼此「你今年的水稻被（福壽螺）吃了多少？」。<br>
+<img src="https://i.imgur.com/HUri3KP.jpg" alt="" width="600"></p><blockquote>
+<p>圖二：三月初在永旭水稻田插秧一景</p>
+</blockquote><h2 id="小鶹：重新找回鳥對田地的信賴"><a class="anchor hidden-xs" href="#小鶹：重新找回鳥對田地的信賴" title="小鶹：重新找回鳥對田地的信賴"><span class="octicon octicon-link"></span></a>小鶹：重新找回鳥對田地的信賴</h2><p>四月時，我們再訪深溝村。由於時節已經逐漸進入初夏，天氣顯得較炎熱。此時期的農事也以除雜草為主（其中以和水稻同屬禾本科的稗草居多）。這一回我們有接觸幾組農友。其中一組是小鶹及猿人，本身經營自有品牌<a href="https://www.facebook.com/cuteowlet/" target="_blank" rel="noopener"><strong>小鶹米</strong></a>，種植時也是採用不灑農藥的友善耕作方式。小鶹本來是賞鳥人，她述說決定親身種田的最大契機是發現近年來台灣鳥類大量減少和農民噴灑農藥有關。農民為了防止作物被鳥類侵害，會選擇架稻草人或是噴灑農藥。噴灑農藥雖然守住了作物的產量，但也危害了原本的生態。鳥類在不知情的情況下累積過多農藥毒，就會死亡。時間久了，鳥的數量也漸漸下滑，甚至有的物種目前也已經瀕臨絕種。她也不時到各地分享自己的方式，希望透過己身之力，將農田漸漸恢復成能讓鳥類安心覓食、築巢的地方。<br>
+<img src="https://i.imgur.com/i7RKZsd.jpg" alt="" width="600"></p><blockquote>
+<p>圖三：四月於小鶹與猿人的田地除草</p>
+</blockquote><h2 id="巧克力：初入田的職農不畏艱難"><a class="anchor hidden-xs" href="#巧克力：初入田的職農不畏艱難" title="巧克力：初入田的職農不畏艱難"><span class="octicon octicon-link"></span></a>巧克力：初入田的職農不畏艱難</h2><p>四月我們參訪見習的另一位農友是巧克力，主要栽種的也是以水稻為主。踏入田地第二年，巧克力也是採不灑農藥、化肥以及除草劑的耕作方式。相較於其他農友，他的資歷雖然比較少，但也看得出他對這片土地的用心。另外，我們也詢問他之後有無大量種植其他農作的可能性，他解釋因現行法規的規定，每塊田地種植的作物都有限制，因此暫時不能種其他作物。<br>
+<img src="https://i.imgur.com/VKuEMO8.jpg" alt="" width="600"></p><blockquote>
+<p>圖四：四月於巧克力的田地除草</p>
+</blockquote><hr><h2 id="混凝土入侵－矗立田間的水泥農舍"><a class="anchor hidden-xs" href="#混凝土入侵－矗立田間的水泥農舍" title="混凝土入侵－矗立田間的水泥農舍"><span class="octicon octicon-link"></span></a>混凝土入侵－矗立田間的水泥農舍</h2><p>踩在田間撿螺、插秧、除草，本應是一幅融入大自然間的和諧畫面，但實際踏入農村後才發現，田邊的天際線與想像中的有段落差：狀似別墅的住宅、外觀新穎的屋舍，硬生生地劃破了我對於農田原有的認知與構圖，也拉開了現實與理想間的差距，揭露出的不只有農地受到的侵蝕、生態的破壞，更是土地利用規章上的疏漏，以及為了減低土地成本而犧牲環境的貪婪。<br>
+<img src="https://i.imgur.com/F9Pfnat.jpg" alt="" width="600"></p><blockquote>
+<p>圖五：宜蘭縣壯圍鄉一處坐落於農田間的農舍</p>
+</blockquote><p>不管是農友座談時的討論，抑或是開車經過各個「農舍」時，農友們所流露出的感嘆、擔憂與憤怒，都令人不禁跟著思考：現行的農地利用政策，是不是真的哪裡出了問題？為什麼雪隧開通之後，越來越多的非法民宿或私人渡假豪宅在宜蘭興起，而其中又有多少就是興建於農田之上？原為農民福利的《農業用地興建農舍辦法》，如今是否已淪為被濫用的美意？如今的所謂農舍，已不再是單純供農民務農、休憩的場所，反而成為農田中的一種破壞，不僅切割了田地的完整性，更對其間的生物與生態帶來不可挽回的傷害，而洗去豐富的多樣性後，侵蝕土地的鋼筋混凝土，留下的恐怕只有灰白的色彩。</p><h2 id="拆不了的違章工廠，農地不再"><a class="anchor hidden-xs" href="#拆不了的違章工廠，農地不再" title="拆不了的違章工廠，農地不再"><span class="octicon octicon-link"></span></a>拆不了的違章工廠，農地不再</h2><p>但是農地利用的課題並不簡單，撇除以農業用地興建房舍的問題之外，更嚴重的還有違章工廠的設置。2017年農委會統計指出全台共有5萬多家違章工廠，佔據的農地面積達1.4萬公頃，為全台法定耕地面的1.8%，且四散的工廠造成農地被嚴重切割，影響的耕作面積更遠高過於此。透過農委會的農地盤查、農地地籍資料上傳，並結合衛星地圖影像後，我們可以透過「農業及農地資源盤查結果查詢圖台」輕易地查詢各地區的農地使用狀況，以違章工廠密度甚高的彰化鹿港為例，就可以看見原本綠色的農用農地，被圖片中套色為紅色的工廠切割得支離破碎（圖六），而石頭厝附近的農地利用所顯示的大面積黃色區域，可見宜蘭地區以農舍為農地利用方式之情形相當普遍（圖七）。<br>
+<img src="https://i.imgur.com/ARMJmns.jpg" alt="" width="600"></p><blockquote>
+<p>圖六：彰化縣鹿港鎮西濱公路一帶的農業用地利用盤查情形。<br>
+綠色部分為農用農地、紅色為工廠、淺黃色為農舍，未套色部分則為非農業用地；由圖可見鹿港地區之農地利用充斥大量違章工廠。<br>
+（圖片來源：行政院農業委員會「農業及農地資源盤查結果查詢圖台」）</p>
+</blockquote><p><img src="https://i.imgur.com/KRYLGKN.jpg" alt="" width="600"></p><blockquote>
+<p>圖七：石頭厝附近的農業用地利用盤查情形。<br>
+綠色部分為農用農地、紅色為工廠、淺黃色為農舍，未套色部分則為非農業用地，石頭厝即位在圖片中央下方的未套色區域一帶；可見宜蘭地區以農舍為農地利用方式之情形相當普遍。<br>
+（圖片來源：行政院農業委員會「農業及農地資源盤查結果查詢圖台」）</p>
+</blockquote><p>今年5月的《工廠管理輔導法》部分條文修正草案通過後，更允許低汙染的違章工廠，能夠用取得「特定工廠登記」的方式後就地合法，甚至只要繳交營運管理費用，工廠就能夠無限期地展延；同時也提高農地工廠地建蔽率、回饋金由50%調降至5%等提案也在討論當中，形同於農地工廠的標準與門檻將一再放寬。當農地蓋工廠越來越合法，甚至連變更地目這個手段都不再需要的時候，現有的農地所面臨的威脅只會日益增加，而對環境與生態的保護，則蕩然無存。</p><h2 id="農地農用，生態永續"><a class="anchor hidden-xs" href="#農地農用，生態永續" title="農地農用，生態永續"><span class="octicon octicon-link"></span></a>農地農用，生態永續</h2><p>自從2000年《農業發展條例》修法，農地可自由買賣後，2014年間就有超過7000棟農舍出現在宜蘭，其中更有七成都是非農業經營的違規使用。農委會2017年9月公布的全國農地盤點中更指出：全台灣361萬公頃中，能夠供給糧食的農地僅68萬公頃，非作農用的農地則有6.7萬公頃，但想要維持國內的糧食供應安全則需要有74至81萬公頃的可耕地，超過現行可耕及非農用用地的總和，更顯得守護農地農用的重要性。這些年來小農們不停地拉著農地農用的旗幟，希望這樣的聲音能被政府聽見、希望這座島嶼上的人民能夠更珍惜我們腳下所踩的土地，莫要忘記土地才是一切的根本，在趨向工業化、科技化的同時，無論是小農們為了保護生態所付出的努力，抑或者是種種的數據，都值得我們去反思這塊土地對我們的重要性，農業的價值不應只用經濟考量，如何保留生態及永續發展的可能，都是未來的毎個人需要共同面對的課題。</p><hr><h2 id="友善耕作，對誰友善？如何耕作？"><a class="anchor hidden-xs" href="#友善耕作，對誰友善？如何耕作？" title="友善耕作，對誰友善？如何耕作？"><span class="octicon octicon-link"></span></a>友善耕作，對誰友善？如何耕作？</h2><p>隨著國民所得年年攀升，經濟水準漸漸成長，民眾對於食品的要求已不再僅是對於口腹之慾的富足，而是開始追求食物來源的健康性、安全性，再這樣的全球潮流下，有機農業一詞開始成為一大值得討論的問題，各國無不開始在法規中制訂有機農業的標準，政府成為食安的把關者，有機農業認證的產品也悄悄拓展進入消費市場。近十數年來，友善耕作一詞開始成為新的討論目標，但實際上與有機農業的差異為何呢?<br>
+有機農業在法律上比較籠統的規範大致上是無化肥、無農藥殘留，而友善耕作更強調的是包括實行農業的過程中對於土地、自然環境、生物的影響，並且更著重於對自然生態的保育，有別於自然農法，自然農法意指順應自然規律，一切耕作、除草、除蟲、施肥等工作都要符合自然，但自然農法對環境不一定友善。<br>
+<img src="https://i.imgur.com/KFpGXN1.png" alt="" width="450"></p><blockquote>
+<p>圖八，日本對於農作認證的規範</p>
+</blockquote><h2 id="友善耕作在法律上的定位"><a class="anchor hidden-xs" href="#友善耕作在法律上的定位" title="友善耕作在法律上的定位"><span class="octicon octicon-link"></span></a>友善耕作在法律上的定位</h2><p>在2008年，官方公布《農產品生產及驗證管理法》，規範唯有經過驗證，才得以宣稱「有機」，並以此建立一套有機農產品管理體系，並提供驗證補助，鼓勵農友加入。而友善耕作、自然農法等名詞，以往在台灣沒有法律上的標準來做相關的規範與認證，使得友善耕作僅是一項農友間存在的共識，直到2017年行政院農業委員會將友善環境耕作納入輔導，並且制定《有機及友善環境耕作補貼要點》、《友善環境耕作推廣團體審認要點》，才開始有公部門正式對於友善農業的定義加以規範。依照行政院農業委員會的公開標準有四大原則:1.維護水土資源2.生態環境與生物多樣性3.促進農業友善環境及資源永續利用4.農業生產過程不使用合成化學物質、基因改造生物及其產品。對於台灣友善農業的標準來說是一大里程碑。<br>
+<img src="https://i.imgur.com/rjeEoe7.png" alt="" width="500"></p><blockquote>
+<p>圖九，行政院農業委員的標準（圖片來源：農委會臉書）</p>
+</blockquote><h2 id="制定標準所帶來的爭議"><a class="anchor hidden-xs" href="#制定標準所帶來的爭議" title="制定標準所帶來的爭議"><span class="octicon octicon-link"></span></a>制定標準所帶來的爭議</h2><p>即便有公家單位的規範，友善農業本身還是具有曖昧不明的地方。以其中一項爭議為例，在農委會的補助要點中，採密閉型環控設施經營之農地，不予納入補貼，也就是將設施農業被排除在外。此項爭議最大的問題在於農業與環境的相對關係，若就維護水土資源與生態環境而言，設施生產使用更少的水及更少的農業資材，雖然在生物多樣性的部分沒有露天農業高，但在對環境的保護上甚至比露天農業還好。設施農業在研究上被證實有三大優於傳統農業的好處:</p><ol>
+<li>生產每磅的蔬果對比於室外土壤種植的蔬果，所使用的資源更少。</li>
+<li>使用容器種植的方式，使用更少的水、需要更少的土地、減少對土壤的侵蝕也增加植物生長的季節。</li>
+<li>容器種植可以減少營養物質流入河流、湖泊或地下的含水層中。</li>
+</ol><p><img src="https://i.imgur.com/FNQ3PU4.jpg" alt=""></p><blockquote>
+<p>圖十：設備農業的例子</p>
+</blockquote><p>以傳統的共識來說，使用自然農法等於友善耕作，也存在著其缺陷，就苦茶粕、蓖麻粕為例，十分符合自然農法，也符合有機農業規範，但其殺傷力可能超越化學藥劑。苦茶粕可以有效的消滅福壽螺，但用過苦茶粕的田水流入渠道後，渠道裡的水生動物，小魚蝦等將無一倖免；蓖麻是生物神經毒，使用後將會造成田中所有無脊椎動物的死亡。苦茶粕、蓖麻粕即便看似殺傷力驚人但還是符合自然農法，更加具有環保價值的農法卻無法被認證為友善，便是農委會標準下值得討論的問題。<br>
+友善耕作在發展上相對於有機農業還不算是成熟，相關法規應由政府、農友和消費者三方溝通，討論出可以具有保障也能符合成本效益的標準，並隨著友善耕作的發展來沿革，並非由法律部門高層閉門會談就能解決。台灣的友善耕作還在發展階段，政府部門應積極投入相對應的措施，以免看似具有潛力的農業發展胎死腹中。</p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#種田新聞" title="種田新聞">種田新聞</a><ul class="nav">
+<li class=""><a href="#序" title="序">序</a></li>
+<li><a href="#茶＆田菁：除掉害蟲可以不必殺它" title="茶＆田菁：除掉害蟲可以不必殺它">茶＆田菁：除掉害蟲可以不必殺它</a></li>
+<li><a href="#永旭：致力栽種不同品種的水稻" title="永旭：致力栽種不同品種的水稻">永旭：致力栽種不同品種的水稻</a></li>
+<li><a href="#小鶹：重新找回鳥對田地的信賴" title="小鶹：重新找回鳥對田地的信賴">小鶹：重新找回鳥對田地的信賴</a></li>
+<li><a href="#巧克力：初入田的職農不畏艱難" title="巧克力：初入田的職農不畏艱難">巧克力：初入田的職農不畏艱難</a></li>
+<li><a href="#混凝土入侵－矗立田間的水泥農舍" title="混凝土入侵－矗立田間的水泥農舍">混凝土入侵－矗立田間的水泥農舍</a></li>
+<li><a href="#拆不了的違章工廠，農地不再" title="拆不了的違章工廠，農地不再">拆不了的違章工廠，農地不再</a></li>
+<li><a href="#農地農用，生態永續" title="農地農用，生態永續">農地農用，生態永續</a></li>
+<li><a href="#友善耕作，對誰友善？如何耕作？" title="友善耕作，對誰友善？如何耕作？">友善耕作，對誰友善？如何耕作？</a></li>
+<li class=""><a href="#友善耕作在法律上的定位" title="友善耕作在法律上的定位">友善耕作在法律上的定位</a></li>
+<li class=""><a href="#制定標準所帶來的爭議" title="制定標準所帶來的爭議">制定標準所帶來的爭議</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#種田新聞" title="種田新聞">種田新聞</a><ul class="nav">
+<li class=""><a href="#序" title="序">序</a></li>
+<li><a href="#茶＆田菁：除掉害蟲可以不必殺它" title="茶＆田菁：除掉害蟲可以不必殺它">茶＆田菁：除掉害蟲可以不必殺它</a></li>
+<li><a href="#永旭：致力栽種不同品種的水稻" title="永旭：致力栽種不同品種的水稻">永旭：致力栽種不同品種的水稻</a></li>
+<li><a href="#小鶹：重新找回鳥對田地的信賴" title="小鶹：重新找回鳥對田地的信賴">小鶹：重新找回鳥對田地的信賴</a></li>
+<li><a href="#巧克力：初入田的職農不畏艱難" title="巧克力：初入田的職農不畏艱難">巧克力：初入田的職農不畏艱難</a></li>
+<li><a href="#混凝土入侵－矗立田間的水泥農舍" title="混凝土入侵－矗立田間的水泥農舍">混凝土入侵－矗立田間的水泥農舍</a></li>
+<li><a href="#拆不了的違章工廠，農地不再" title="拆不了的違章工廠，農地不再">拆不了的違章工廠，農地不再</a></li>
+<li><a href="#農地農用，生態永續" title="農地農用，生態永續">農地農用，生態永續</a></li>
+<li><a href="#友善耕作，對誰友善？如何耕作？" title="友善耕作，對誰友善？如何耕作？">友善耕作，對誰友善？如何耕作？</a></li>
+<li class=""><a href="#友善耕作在法律上的定位" title="友善耕作在法律上的定位">友善耕作在法律上的定位</a></li>
+<li class=""><a href="#制定標準所帶來的爭議" title="制定標準所帶來的爭議">制定標準所帶來的爭議</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
